@@ -1,11 +1,17 @@
 {
+  "title" : "mathlib",
   "author": "Maruf Hasan",
   "license": "MIT",
-  "version" : "1.0.0",
+  "version" : "1.0.2",
+  "description" : "a math library with 70+ features which can make a programme more beautiful and mathametical.",
+  "keywords" : [
+    "math",
+    "mathlib",
+    "mathLib",
+    "math library"
+    ],
   "scripts": {
-    "start": "node usr.js",
     "math": "node math.js",
-    "auto": "nodemon usr.js",
     "test": "echo \"mathLib version 1.0.0\" && exit 1"
   }
 }
