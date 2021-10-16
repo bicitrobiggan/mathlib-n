@@ -1,11 +1,10 @@
 # mathlib
-a dynamic library of math which has 70+ features.
+a dynamic library of math which has 70+ features. And it can access the built-in "Math" object.
 # author
-maruf hasan
-
+Maruf Hasan
 # installation
 ```
-https://github.com/bicitrobiggan/mathlib.git
+git clone https://github.com/bicitrobiggan/mathlib.git
 ```
 
 
