@@ -1,0 +1,11 @@
+{
+  "author": "Maruf Hasan",
+  "license": "MIT",
+  "version" : "1.0.0",
+  "scripts": {
+    "start": "node usr.js",
+    "math": "node math.js",
+    "auto": "nodemon usr.js",
+    "test": "echo \"mathLib version 1.0.0\" && exit 1"
+  }
+}
