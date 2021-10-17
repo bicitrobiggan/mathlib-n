@@ -9,11 +9,11 @@ git clone https://github.com/bicitrobiggan/mathlib.git && cd ../
 # uses
 
 First define the math object.
-```
+```js
 const math = require('./mathlib/index.js');
 ```
 Then you can use any of its function or constant by call them from the math object. Like : 
-```
+```js
 let factorialResult = math.frac(9);
 console.log(factorialResult);
 ```
