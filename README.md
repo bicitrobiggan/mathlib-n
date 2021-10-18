@@ -18,7 +18,7 @@ like those features, it has more than 70 features (including built-in Math objec
 const math = require('mathlib-n');
 ```
 ### fix user
-```linux
+```ps
 $ npm run fix-usr --prefix node_modules/mathlib-n
 ```
 ## content table
