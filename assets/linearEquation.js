@@ -1,7 +1,7 @@
 /*
-Title : 
+Title : linearEquation.js
 Author : Maruf Hasan
-Description :
+Description : solve the linear equations (ax + by = c)
 Date : , 2021
 */
 
@@ -9,7 +9,7 @@ Date : , 2021
 const error = require('./../error.js');
 
 //main function to export
-function linearEq(first_Equation, second_Equation) {
+function linearEq(first_Equation = [0, 0, 0], second_Equation = [0, 0, 0]) {
   let fstEq = Array.isArray(first_Equation) && first_Equation.length === 3 ? first_Equation : undefined;
   let secEq = Array.isArray(second_Equation) && second_Equation.length === 3 ? second_Equation : undefined;
   if (fstEq && secEq) {
@@ -25,7 +25,7 @@ function linearEq(first_Equation, second_Equation) {
     let result = {};
     let x = (((c1 * b2) - (c2 * b1)) / ((a1 * b2) - (b1 * a2)));
     let y = (((c1 * a2) - (c2 * a1)) / ((b1 * a2) - (a1 * b2)));
-    if (x && y) {
+    if (x !== NaN && y !== NaN) {
       result = { x, y };
       return result;
     } else {

@@ -1,0 +1,17 @@
+{
+  "name": "mathlib-n",
+  "main": "index.js",
+  "license": "MIT",
+  "ignore": [
+    "package.json"
+  ],
+  "keywords": [
+    "math ",
+    "mathlib-n",
+    "mathLib",
+    "math library",
+    "mathlib",
+    "mathlibjs",
+    "mathjs"
+  ]
+}

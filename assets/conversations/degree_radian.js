@@ -1,7 +1,7 @@
 /*
-Title : 
+Title : degree_radian.js
 Author : Maruf Hasan
-Description :
+Description : convert degree into radian and convert  radian into degree
 Date : 7 October , 2021
 */
 
@@ -39,11 +39,13 @@ function deg2Rad(input = [0, 0, 0]) {
         min = input.search(regXpMin) >= 0 ? parseFloat(input.substring(input.search(regXpDeg) + 1, input.search(regXpMin))) : 0,
         sec = input.search(regXpSec) >= 0 ? parseFloat(input.substring(input.search(regXpMin) + 1, input.search(regXpSec))) : 0;
       return localDeg([deg, min, sec]);
-    } else if (typeof(input) === 'number') {
-      return localDeg([input,0,0]);
     } else {
-      error('an Array contains 3 numbers or a string', 'input', 'deg2Rad()');
+      error('a string including °,\',"','input','deg2Rad()');
     }
+  } else if (typeof(input) === 'number') {
+    return localDeg([input, 0, 0]);
+  } else {
+    error('an Array contains 3 numbers or a string', 'input', 'deg2Rad()');
   }
 }
 
@@ -68,7 +70,7 @@ function rad2Deg(radian) {
     } else if (radian.search(regXp2) >= 0 && radian.search(/^π/gi) === -1) {
       rad = Function("return " + (radian.replace(/(π){1}/gi, '')))();
       be4deg = rad % (Math.PI / 180);
-       return localRad(be4deg);
+      return localRad(be4deg);
     } else if (radian.search(regXp2) >= 0 && radian.search(/^π/gi) >= 0) {
       rad = Function(`return 1${radian.replace(/(π){1}/gi, '')}`)();
       be4deg = rad % (Math.PI / 180);
@@ -86,11 +88,11 @@ function localRad(be4deg) {
   deg = Math.ceil(be4deg * 180) - 1;
   min = Math.ceil(((be4deg * 180) - (deg)) * 60) - 1;
   sec = (((((be4deg * 180) - (deg)) * 60) - min) * 60);
-  if (sec >= 0) {
+  if (sec >= 60) {
     sec = 0;
     min++;
   }
-  if (min >= 0) {
+  if (min >= 60) {
     min = 0;
     deg++;
   }
