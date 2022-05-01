@@ -1,17 +1,32 @@
 {
-  "title" : "mathlib",
+  "name": "mathlib-n",
+  "title": "mathlib",
   "author": "Maruf Hasan",
+  "main": "index.js",
   "license": "MIT",
-  "version" : "1.0.2",
-  "description" : "a math library with 70+ features which can make a programme more beautiful and mathametical.",
-  "keywords" : [
+  "version": "3.2.0",
+  "description": "a math library with 127 features which can make a nodeJs programme more beautiful and mathametical.",
+  "keywords": [
     "math",
-    "mathlib",
+    "mathlib-n",
     "mathLib",
-    "math library"
-    ],
+    "math library",
+    "mathlib",
+    "mathlibjs",
+    "mathjs"
+  ],
   "scripts": {
-    "math": "node math.js",
-    "test": "echo \"mathLib version 1.0.0\" && exit 1"
-  }
+    "v": "node mathlib.js",
+    "test": "echo \"mathLib-n version 3.2.0\"",
+    "fix-memo": "node ./.workplace/fix_memo",
+    "mood": "node ./.workplace/moodchanger"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bicitrobiggan/mathlib-n.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bicitrobiggan/mathlib-n/issues"
+  },
+  "homepage": "https://github.com/bicitrobiggan/mathlib-n#readme"
 }
